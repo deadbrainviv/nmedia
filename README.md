@@ -36,7 +36,7 @@ The testing code uses the following libraries: Mocha, Chai and Sinon.
 
 The testing html page is on URL:
 ```
-http://localhost:8080/
+http://localhost:8080/test
 ```
 
 # Social media search demo application
