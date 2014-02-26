@@ -1,0 +1,21 @@
+.container-fluid {
+    margin-left:18px;
+    margin-right:18px;
+}
+
+.progress-actions {
+    line-height: 34px;
+}
+
+.progress{
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+}
+
+.progress span{
+    display: block;
+    position: absolute;
+    width: 100%;
+    color: black;
+}

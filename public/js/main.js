@@ -1,22 +1,19 @@
-var AppRouter = Backbone.Router.extend({
+require.config({
+  paths: {
+    jquery: '../lib/jquery.min',
+    underscore: '../lib/underscore-min',
+    backbone: '../lib/backbone-min',
+    templates: '../templates'
+  }
 
-	routes: {
-		""	: "home"
-	},
-	initialize: function () {
-
-	},
-
-	home: function (id) {
-		if (!this.homeView) {
-			this.homeView = new HomeView();
-		}
-		$('#content').html(this.homeView.el);
-	}
 });
 
+require([
+  // Load our app module and pass it to our definition function
+  'app',
 
-utils.loadTemplate(['HomeView'], function () {
-	app = new AppRouter();
-	Backbone.history.start();
+], function(App){
+  // The "app" dependency is passed in as "App"
+  // Again, the other dependencies passed in are not "AMD" therefore don't pass a parameter to this function
+  App.initialize();
 });

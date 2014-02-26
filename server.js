@@ -6,8 +6,18 @@ var app = express();
 app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
-app.use(express.static(path.join(__dirname, 'public')));
+app.configure('development', function(){
+	console.log('Starting to configure development environment.');
+    app.use(express.static(path.join(__dirname, 'public')));
+});
 
+app.configure('production', function(){
+	console.log('Starting to configure production environment.');
+    app.use(express.static(path.join(__dirname, 'dist')));
+});
+
+
+// Restful API for contents application demo
 app.get('/contents', contents.findAll);
 
 app.get('/contents/:id', contents.findById);

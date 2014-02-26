@@ -1,0 +1,2 @@
+/*! nmedia 2014-02-26 */
+define(["jquery","underscore","backbone","views/progress"],function(a,b,c,d){var e=c.Router.extend({routes:{"":"progress"},initialize:function(){},progress:function(){var a=new d({el:"#content"});a.render()}}),f=function(){new e;c.history.start()};return{initialize:f}});

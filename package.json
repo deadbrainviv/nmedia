@@ -1,11 +1,19 @@
 {
-	"name": "nmedia",
-	"description": "nmedia web application",
-	"verion": "0.0.1",
-	"private": true,
-	"dependencies": {
-		"express": "3.4.8"
-	}
-
-
+  "name": "nmedia",
+  "description": "nmedia web application",
+  "verion": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.4.8"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-cssmin": "~0.8.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-nodemon": "~0.2.0",
+    "grunt-env": "~0.4.1"
+  }
 }
