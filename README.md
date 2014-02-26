@@ -18,6 +18,7 @@ The application uses Backbone.js, underscore.js, jQuery and Require.js for the f
 The Grunt will do the following tasks: jshint, uglify Javacript files, minify CSS files, copy the files to dist directory for production site.
 
 To start the server in development environment, please run:
+
 ```
 grunt
 ```
@@ -37,8 +38,6 @@ The testing html page is on URL:
 ```
 http://localhost:8080/
 ```
-
-
 
 # Social media search demo application
 
